@@ -58,14 +58,14 @@ public class ServerEvent implements Listener{
             String fmsg = matcher.group().replaceAll(Args.ForwardingPrefix(), "");
             List<Long> groups = Config.getGroupQQs();
             for (long groupID : groups){
-                PlumBot.getBot().sendMsg(true, "[生存服]"+name+":"+fmsg,groupID);
+                PlumBot.getBot().sendMsg(true, "[小游戏]"+name+":"+fmsg,groupID);
             }
             return;
         }
 
         List<Long> groups = Config.getGroupQQs();
         for (long groupID : groups){
-            PlumBot.getBot().sendMsg(true, "[生存服]"+name+":"+message,groupID);
+            PlumBot.getBot().sendMsg(true, "[小游戏]"+name+":"+message,groupID);
         }
     }
 
