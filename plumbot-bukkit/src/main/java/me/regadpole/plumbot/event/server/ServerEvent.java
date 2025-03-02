@@ -136,7 +136,7 @@ public class ServerEvent implements Listener{
                 }
                 List<Long> groups = Config.getGroupQQs();
                 for (long groupID : groups){
-                    PlumBot.getBot().sendMsg(true, "玩家"+name+"加入游戏",groupID);
+                    PlumBot.getBot().sendMsg(true, "玩家"+name+"回到主城",groupID);
                 }
             });
         } else {
@@ -145,7 +145,7 @@ public class ServerEvent implements Listener{
             }
             List<Long> groups = Config.getGroupQQs();
             for (long groupID : groups){
-                PlumBot.getBot().sendMsg(true, "玩家"+name+"加入游戏",groupID);
+                PlumBot.getBot().sendMsg(true, "玩家"+name+"回到主城",groupID);
             }
         }
     }
@@ -160,7 +160,7 @@ public class ServerEvent implements Listener{
         }
         List<Long> groups = Config.getGroupQQs();
         for (long groupID : groups){
-            PlumBot.getBot().sendMsg(true, "玩家"+name+"退出游戏",groupID);
+            PlumBot.getBot().sendMsg(true, "玩家"+name+"离开主城",groupID);
         }
     }
 
